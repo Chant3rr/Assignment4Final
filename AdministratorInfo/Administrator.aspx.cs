@@ -11,7 +11,7 @@ namespace Assignment4Final.AdministratorInfo
     public partial class Administrator : System.Web.UI.Page
     {
         KarateDataContext dbcon;
-        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\bmedu\\OneDrive\\Desktop\\CSCI 213\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
+        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jacks\\Desktop\\VS CLASS\\assignment 4\\Assignment4Final\\App_Data\\KarateSchool1.mdf\";Integrated Security=True;Connect Timeout=30";
 
         protected void Page_Load(object sender, EventArgs e)
         {

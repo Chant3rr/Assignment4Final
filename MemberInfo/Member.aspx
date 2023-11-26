@@ -23,6 +23,8 @@
                 </asp:GridView>
                 <asp:LinqDataSource ID="LinqTable" runat="server" EntityTypeName="">
                 </asp:LinqDataSource>
+                Total Cost:
+                <asp:Label ID="costLabel" runat="server"></asp:Label>
                 <br />
             </td>
             <td>&nbsp;</td>

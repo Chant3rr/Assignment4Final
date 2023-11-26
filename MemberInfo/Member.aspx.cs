@@ -12,7 +12,7 @@ namespace Assignment4Final.MemberInfo
     public partial class Member : System.Web.UI.Page
     {
         KarateDataContext dbcon;
-        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\bmedu\\OneDrive\\Desktop\\CSCI 213\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
+        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jacks\\Desktop\\VS CLASS\\assignment 4\\Assignment4Final\\App_Data\\KarateSchool1.mdf\";Integrated Security=True;Connect Timeout=30";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -58,8 +58,16 @@ namespace Assignment4Final.MemberInfo
                                   i.InstructorLastName,
                                   x.SectionFee
                               });
-            MemberGridView.DataSource = tableQuery;
+            decimal totalCost = 0;
+            
+
+            MemberGridView.DataSource = tableQuery.Distinct();
             MemberGridView.DataBind();
+            for (int i = 0; i < MemberGridView.Rows.Count; i++)
+            {
+                totalCost += Convert.ToDecimal(MemberGridView.Rows[i].Cells[4].Text);
+            }
+            costLabel.Text = totalCost.ToString();
         }
     }
 }
