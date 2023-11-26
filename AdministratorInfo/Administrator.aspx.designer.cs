@@ -51,6 +51,33 @@ namespace Assignment4Final.AdministratorInfo
         protected global::System.Web.UI.WebControls.GridView adminInstructorGridView;
 
         /// <summary>
+        /// netUserNameText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox netUserNameText;
+
+        /// <summary>
+        /// netUserPasswordText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox netUserPasswordText;
+
+        /// <summary>
+        /// netUserRadio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList netUserRadio;
+
+        /// <summary>
         /// memberFirstText control.
         /// </summary>
         /// <remarks>
